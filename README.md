@@ -63,7 +63,7 @@ class _PlutoMenuBarDemoState extends State<PlutoMenuBarDemo> {
 
   late final List<PlutoMenuItem> orangeHoverMenus;
 
-  late final List<PlutoMenuItem> whiteTapMenus;
+  late final List<PlutoMenuItem>     whiteTapMenus;
 
   late final List<PlutoMenuItem> orangeTapMenus;
 
