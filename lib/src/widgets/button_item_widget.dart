@@ -30,7 +30,7 @@ class ButtonItemWidget extends StatelessWidget {
         if (menu.icon != null) ...[
           Icon(
             menu.icon,
-            color: menuIconColor,
+            color: menu.iconColor,
             size: menuIconSize,
           ),
           SizedBox(width: 5),
