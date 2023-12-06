@@ -17,6 +17,8 @@ class PlutoMenuItem {
 
   final IconData? icon;
 
+  final Color? iconColor;
+
   final bool enable;
 
   /// Callback executed when a menu is tapped
@@ -34,6 +36,7 @@ class PlutoMenuItem {
     this.enable = true,
     this.onTap,
     this.children,
+    this.iconColor
   })  : _key = id == null ? GlobalKey() : GlobalObjectKey(id),
         _isBack = false {
     _setParent();
@@ -135,7 +138,8 @@ class PlutoMenuItem {
         enable = true,
         onTap = null,
         _key = GlobalKey(),
-        _isBack = true;
+        _isBack = true ,
+        iconColor = null;
 
   final GlobalKey _key;
 
@@ -187,6 +191,7 @@ class PlutoMenuItemCheckbox extends PlutoMenuItem {
     super.children,
     this.onChanged,
     this.initialCheckValue,
+
   });
 
   PlutoMenuItemType get type => PlutoMenuItemType.checkbox;

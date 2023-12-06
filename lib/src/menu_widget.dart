@@ -390,7 +390,7 @@ class _MenuWidgetState extends State<_MenuWidget> {
           if (widget.menu.icon != null) ...[
             Icon(
               widget.menu.icon,
-              color: iconColor,
+              color: widget.menu.iconColor,
               size: widget.style.iconSize,
             ),
             SizedBox(width: 5),
