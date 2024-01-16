@@ -90,7 +90,7 @@ class _MenuWidgetState extends State<_MenuWidget> {
         _showHoveredPopupMenu(menu, context, menu.children!);
         break;
       case PlutoMenuBarMode.tap:
-        _showTappedPopupMenu(menu, context, menu.children!);
+        _showHoveredPopupMenu(menu, context, menu.children!);
         break;
     }
   }
